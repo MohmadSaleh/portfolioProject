@@ -1,0 +1,547 @@
+     /* Reset some default styles */
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
+     /* Sticky header with navigation */
+     #mainContainer header.sticky {
+         position: sticky;
+         top: 0;
+         background-color: #fff;
+         color: #000;
+         z-index: 100;
+         width: 100vw;
+         height: 80px;
+     }
+
+     #mainContainer nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px 20px;
+     }
+
+     #mainContainer .logo {
+         font-size: 24px;
+         font-weight: bold;
+         font-family: satisfy;
+     }
+
+     #mainContainer .nav-items {
+         list-style: none;
+         display: flex;
+     }
+
+     #mainContainer .nav-items li {
+         margin-right: 20px;
+     }
+
+     #mainContainer .nav-items a,
+     #mainContainer .logo a {
+         text-decoration: none;
+         color: #000;
+         font-weight: bold;
+         transition: color 0.3s;
+     }
+
+     #mainContainer .nav-items a:hover,
+     #mainContainer .logo a:hover {
+         color: rgb(0, 188, 212);
+     }
+
+     #mainContainer #section1,
+     #mainContainer #projSection1 {
+         width: 100vw;
+         height: 461px;
+         /* background-color: rgb(0, 188, 212); */
+         background-image: linear-gradient(to Bottom, rgba(0, 188, 212, 0.5), rgba(255, 255, 255, 0.8)), url('portfolioImgs/bannerpic.jpg');
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+
+     #mainContainer #projSection1 .downloadButtons {
+         list-style: none;
+         display: flex;
+         flex-direction: row;
+
+     }
+
+     #mainContainer #projSection1 .downloadButtons li {
+         list-style: none;
+         background-color: rgb(0, 188, 212);
+         border-radius: 20px;
+         width: 120px;
+         margin: 20px;
+         padding: 5px;
+         transition: background-color 0.3s;
+     }
+
+     #mainContainer #projSection1 .downloadButtons li:hover {
+         background-color: rgb(0, 116, 132);
+         ;
+     }
+
+     #mainContainer #projSection1 .downloadButtons li a {
+         text-decoration: none;
+         display: block;
+         width: 100%;
+         color: black;
+         transition: color 0.3s;
+
+     }
+
+     #mainContainer #projSection1 .downloadButtons li a:hover {
+         color: rgb(0, 188, 212);
+     }
+
+
+
+     #mainContainer .porfolioHeading,
+     #mainContainer .portfolioGraph,
+     #mainContainer .proj1Heading,
+     #mainContainer .proj1Graph {
+         width: 800px;
+     }
+
+     /* section2-a thechnology used in the projects */
+     #mainContainer #section2,
+     #mainContainer #projSection2 {
+         width: 100vw;
+         height: 80px;
+         background-color: #fff;
+     }
+
+     #mainContainer .bulidingTechBar,
+     #mainContainer .bulidingTechBar ul {
+         width: 100vw;
+         display: flex;
+         background-color: #fff;
+         justify-content: space-evenly;
+     }
+
+     #mainContainer .bulidingTechBar ul li {
+         list-style-type: none;
+     }
+
+     #mainContainer .bulidingTechBar ul li img {
+         width: 80px;
+         height: auto;
+         flex-direction: row;
+     }
+
+
+     /* Section 3 - Profile pic and info about me */
+     #mainContainer #section3 {
+         width: 100vw;
+         height: 715px;
+         text-align: center;
+         background-color: #f5f5f5;
+         padding: 60px 0;
+     }
+
+     #mainContainer .profile-pic {
+         width: 200px;
+         height: 200px;
+         border-radius: 50%;
+         object-fit: cover;
+         margin-bottom: 10px;
+         margin: 0 auto;
+     }
+
+     #mainContainer .profile-info {
+         max-width: 600px;
+         margin: 0 auto;
+     }
+
+     #mainContainer .profile-info h2 {
+         font-size: 24px;
+         margin-bottom: 20px;
+     }
+
+     #mainContainer #projSection3 {
+         width: 100vw;
+         height: 1100px;
+         background-color: rgba(235, 254, 255, 1);
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+         display: flex;
+         align-items: center;
+         text-align: center;
+         justify-content: center;
+     }
+
+     #mainContainer #projSection3 img {
+         width: 1189px;
+         height: auto;
+
+     }
+
+     /* Section 4 - Project cards */
+     #mainContainer #section4 {
+         width: 100vw;
+         height: 1558px;
+         display: grid;
+         grid-template-columns: 150px repeat(3, 1fr) 150px;
+         grid-template-rows: 290px 518px 518px;
+         gap: 20px;
+         padding: 80px;
+     }
+
+     #mainContainer .project-card {
+         width: 300px;
+         height: auto;
+         margin: 0 auto;
+         background-color: #fff;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         padding: 20px;
+         text-align: center;
+         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+     }
+
+     #mainContainer .project1,
+     #mainContainer .project2,
+     #mainContainer .project3 {
+         grid-row: 2/3;
+     }
+
+     #mainContainer .project4,
+     #mainContainer .project5,
+     #mainContainer .project6 {
+         grid-row: 3/4;
+     }
+
+     #mainContainer .project1,
+     #mainContainer .project4 {
+         grid-column: 2/3;
+     }
+
+     #mainContainer .project2,
+     #mainContainer .project5 {
+         grid-column: 3/4;
+     }
+
+     #mainContainer .project3,
+     #mainContainer .project6 {
+         grid-column: 4/5;
+     }
+
+     #mainContainer .project4,
+     #mainContainer .project5,
+     #mainContainer .project6 {
+         grid-row: 3/4;
+     }
+
+     #mainContainer .project-card img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 5px;
+         transition: transform 0.3s ease-in-out;
+     }
+
+     #mainContainer .project-info {
+         margin-top: 20px;
+     }
+
+     #mainContainer .project-info h3 {
+         font-size: 18px;
+         margin-bottom: 10px;
+     }
+
+     #mainContainer .project-info ul {
+         list-style-type: none;
+         display: flex;
+         justify-content: space-around;
+         text-align: center;
+     }
+
+     #mainContainer .project-info ul li {
+         flex-direction: left;
+     }
+
+     #mainContainer .project-info ul li img {
+         width: 28px;
+         height: auto;
+     }
+
+     #mainContainer .project-info p {
+         font-size: 16px;
+         color: #555;
+         margin-bottom: 10px;
+     }
+
+     #mainContainer .project-link {
+         display: inline-block;
+         background-color: #00bcd4;
+         color: #fff;
+         padding: 8px 16px;
+         text-decoration: none;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+     }
+
+     #mainContainer .project-link:hover {
+         background-color: #0084a8;
+     }
+
+     #mainContainer .project-card:hover {
+         transform: translateY(-10px);
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+     }
+
+     #mainContainer .project-card:hover img {
+         transform: scale(1.1);
+     }
+
+     /* Section 5 - Contact section */
+     #mainContainer #section5 {
+         width: 100vw;
+         height: 959px;
+         background-color: #333;
+         color: #fff;
+         text-align: center;
+     }
+
+     #mainContainer .contact-container {
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         gap: 40px;
+     }
+
+     #mainContainer .contact-img {
+         flex: top;
+         text-align: left;
+         width: 700px;
+         height: auto;
+         margin-top: 0;
+     }
+
+     #mainContainer .contact-img img {
+         flex: 1;
+         text-align: left;
+         width: 700px;
+         height: auto;
+     }
+
+
+     #mainContainer .contact-info h2 {
+         font-size: 24px;
+         margin-bottom: 20px;
+     }
+
+     #mainContainer .contact-info p {
+         font-size: 16px;
+         line-height: 1.5;
+     }
+
+     #mainContainer .contact-form {
+         flex: 1;
+         width: 400px;
+         margin-top: 200px;
+         margin-right: 100px;
+     }
+
+     #mainContainer input[type="text"],
+     #mainContainer input[type="email"],
+     #mainContainer textarea {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 20px;
+         border: 1px solid #ddd;
+         border-radius: 5px;
+         background-color: #f5f5f5;
+         color: #333;
+     }
+
+     #mainContainer button[type="submit"] {
+         background-color: #00bcd4;
+         color: #fff;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         margin-bottom: 50px;
+     }
+
+     #mainContainer button[type="submit"]:hover {
+         background-color: #0084a8;
+     }
+
+     /* Bottom Bar with social media Links */
+     #mainContainer .bottom-bar {
+         display: flex;
+         width: 100vw;
+         height: 200px;
+         background-color: rgba(26, 224, 236, 1);
+         text-align: center;
+         padding: 20px 0;
+         justify-content: space-around;
+     }
+
+     #mainContainer .bottom-bar a {
+         display: inline-block;
+         margin: 0 20px;
+         text-decoration: none;
+         transition: transform 0.3s ease-in-out;
+     }
+
+     #mainContainer .bottom-bar img {
+         margin-top: 55px;
+         max-width: 120px;
+         height: auto;
+         transition: transform 0.3s ease-in-out;
+     }
+
+     #mainContainer .bottom-bar a:hover img {
+         transform: scale(1.1);
+     }
+
+     #mainContainer .footer {
+         width: 100vw;
+         height: 50px;
+         background-color: black;
+         color: white;
+     }
+
+     @media(max-width:500px) {
+         #mainContainer .section {
+             width: 100vw;
+             height: auto;
+         }
+
+         #mainContainer header.sticky {
+             height: auto;
+         }
+
+         #mainContainer nav {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 10px 20px;
+         }
+
+         #mainContainer .logo {
+             font-size: 24px;
+             font-weight: bold;
+         }
+
+         #mainContainer .nav-items {
+             list-style: none;
+             display: none;
+
+         }
+
+         #mainContainer .logo:hover+.nav-items {
+             display: flex;
+         }
+
+
+         #mainContainer #section1,
+         #mainContainer #projSection1 {
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+         }
+
+         #mainContainer .porfolioHeading,
+         #mainContainer .portfolioGraph,
+         #mainContainer .proj1Heading,
+         #mainContainer .proj1Graph {
+             width: auto;
+         }
+
+         #mainContainer #section2 .bulidingTechBar,
+         #mainContainer .bulidingTechBar ul {
+             flex-wrap: wrap;
+             justify-content: space-between;
+
+         }
+
+         #mainContainer .bulidingTechBar ul li img {
+             width: 60px;
+         }
+
+         #mainContainer #projSection3 {
+             width: 100vw;
+             height: 332px;
+
+         }
+
+         #mainContainer #projSection3 img {
+             width: 295px;
+             height: auto;
+
+         }
+
+         #mainContainer #section4 {
+             height: auto;
+             display: flex;
+             flex-direction: column;
+             gap: 20px;
+             padding: 80px;
+         }
+
+         #mainContainer .project-card {
+             width: auto
+         }
+
+         #mainContainer #section5 {
+             height: auto;
+         }
+
+         #mainContainer .contact-container {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             gap: 40px;
+         }
+
+         #mainContainer .contact-img {
+             text-align: left;
+             width: 400px;
+             height: auto;
+             margin-top: 0;
+             margin-left: 0;
+         }
+
+         #mainContainer .contact-img img {
+             flex: 1;
+             text-align: left;
+             width: 185px;
+             height: auto;
+         }
+
+         #mainContainer .contact-form {
+             width: 300px;
+             margin-top: 0;
+             margin-right: 0;
+         }
+
+         #mainContainer .bottom-bar {
+             flex-wrap: wrap;
+             height: auto;
+             justify-content: space-between;
+         }
+
+         #mainContainer .bottom-bar a {
+             display: inline-block;
+             margin: 0 20px;
+             text-decoration: none;
+             transition: transform 0.3s ease-in-out;
+         }
+
+         #mainContainer .bottom-bar img {
+             width: 80px;
+             height: 80px;
+         }
+
+     }

@@ -1,0 +1,35 @@
+# Portfolio Project
+
+Welcome to my portfolio project! This project showcases my work and skills through six landing pages.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+This portfolio project serves as a showcase of my work, skills, and accomplishments. It consists of six landing pages, each highlighting a different aspect of my portfolio.
+
+## Technologies Used
+
+- HTML
+- CSS
+- SCSS (Sass)
+
+## Features
+
+- **Six Landing Pages**: Showcase your work through six dedicated landing pages, each focusing on a specific aspect or project.
+- **Responsive Design**: Ensure a seamless viewing experience across various devices with a responsive design.
+- **Sass for Styling**: Utilize the power of Sass to enhance and organize your stylesheets efficiently.
+
+## Project Structure
+
+Briefly describe the organization of your project's files and directories. Highlight any important files.
+
